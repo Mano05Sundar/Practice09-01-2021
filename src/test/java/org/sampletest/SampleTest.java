@@ -38,6 +38,12 @@ public class SampleTest {
 		WebElement txtPassword = driver.findElement(By.id("pass"));
 		txtPassword.sendKeys(s1);
 		driver.findElement(By.name("login")).click();
+		WebElement txtUserName2 = driver.findElement(By.id("email"));
+		txtUserName.sendKeys(s);
+		WebElement txtPassword2 = driver.findElement(By.id("pass"));
+		txtPassword.sendKeys(s1);
+		driver.findElement(By.name("login")).click();
+		
 	}
 	@AfterMethod
 	private void afterMethod() {
